@@ -39,4 +39,5 @@ app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 5) edit the packages.json file:
     5.1) add the start command script: "start": "node server.js"
     5.2) add the start-dev command script: "start-dev":"nodemon server.js"
+    5.3) add "type": "module"
 */
