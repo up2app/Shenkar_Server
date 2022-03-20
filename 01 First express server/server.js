@@ -1,9 +1,8 @@
 //ייבוא החבילה האחראית על יצירת השרת
-import express from 'express';
-//ייבוא חבילה האחראית על קריאת קבצים מתוך השרת
-import { fileURLToPath } from 'url'
+const express = require('express');
+
 //ייבוא חבילה האחראית על מציאת ניתוב קבצים בשרת
-import path from 'path';
+const path = require('path');
 
 //הגדרת הפורט של השרת המקומי יכול להיות כל מספר 
 const PORT = 5001;
@@ -12,7 +11,7 @@ const PORT = 5001;
 const app = express();
 
 //הגדרה לשרת להשתמש בקבצים סטטיים הנמצאים בתיקייה מסויימת
-app.use(express.static(path.join(fileURLToPath(import.meta.url), '../website/')))
+app.use(express.static(path.join(__dirname, '/website/')))
 
 //הגדרה לפעולת שליחת קובץ כאשר ניגשים לכתובת הראשית של השרת
 app.get(`/`, async (req, res) => {
@@ -39,5 +38,4 @@ app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 5) edit the packages.json file:
     5.1) add the start command script: "start": "node server.js"
     5.2) add the start-dev command script: "start-dev":"nodemon server.js"
-    5.3) add "type": "module"
 */
