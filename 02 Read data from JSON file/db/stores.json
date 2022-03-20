@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "name": "coffe shop",
+        "adress": "Tel Aviv",
+        "products": [
+            {
+                "pId": 1,
+                "pName": "coffe",
+                "pPrice": 13,
+                "pDiscountPrice": 6
+            },
+            {
+                "pId": 2,
+                "pName": "tea",
+                "pPrice": 8,
+                "pDiscountPrice": 4
+            },
+            {
+                "pId": 3,
+                "pName": "chai",
+                "pPrice": 8,
+                "pDiscountPrice": 5
+            },
+            {
+                "pId": 4,
+                "pName": "wine",
+                "pPrice": 12,
+                "pDiscountPrice": 8
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "clothes shop",
+        "adress": "Givataaim",
+        "products": [
+            {
+                "pId": 1,
+                "pName": "t-shit",
+                "pPrice": 100,
+                "pDiscountPrice": 60
+            },
+            {
+                "pId": 2,
+                "pName": "pants",
+                "pPrice": 85,
+                "pDiscountPrice": 70
+            },
+            {
+                "pId": 3,
+                "pName": "shoes",
+                "pPrice": 350,
+                "pDiscountPrice": 250
+            },
+            {
+                "pId": 4,
+                "pName": "hat",
+                "pPrice": 120,
+                "pDiscountPrice": 80
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "supermarket",
+        "adress": "Ramat Gan",
+        "products": [
+            {
+                "pId": 1,
+                "pName": "milk",
+                "pPrice": 13,
+                "pDiscountPrice": 6
+            },
+            {
+                "pId": 2,
+                "pName": "rice",
+                "pPrice": 8,
+                "pDiscountPrice": 6
+            },
+            {
+                "pId": 3,
+                "pName": "bread",
+                "pPrice": 15,
+                "pDiscountPrice": 13
+            },
+            {
+                "pId": 4,
+                "pName": "butter",
+                "pPrice": 18,
+                "pDiscountPrice": 11
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "tools shop",
+        "adress": "Ramat Hasharon",
+        "products": [
+            {
+                "pId": 1,
+                "pName": "wrench",
+                "pPrice": 28,
+                "pDiscountPrice": 20
+            },
+            {
+                "pId": 2,
+                "pName": "hammer",
+                "pPrice": 38,
+                "pDiscountPrice": 24
+            },
+            {
+                "pId": 3,
+                "pName": "saw",
+                "pPrice": 55,
+                "pDiscountPrice": 35
+            },
+            {
+                "pId": 4,
+                "pName": "screwdriver",
+                "pPrice": 15,
+                "pDiscountPrice": 12
+            }
+        ]
+    }
+]

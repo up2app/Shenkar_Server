@@ -18,6 +18,12 @@ app.get(`/`, async (req, res) => {
     res.sendFile(`./index.html`);
 })
 
+app.get(`/about`, async (req, res) => {
+    //console.log('path', path.join(__dirname, '/website/some_folder/about.html'))
+    //res.send('bye');
+    res.sendFile(path.join(__dirname, '/website/some_folder/about.html'));
+})
+
 // /home הגדרה לשליחת מידע טקסטואלי כאשר ניגשים לכתובת 
 app.get(`/home`, async (req, res) => {
     res.send('Home sweet home');
