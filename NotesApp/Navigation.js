@@ -1,10 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import { Ionicons,AntDesign } from '@expo/vector-icons';
 
 import Main from './screens/Main';
 import Page2 from './screens/Page2';
+
 //user tabs
 import Settings from './screens/user_screens/Settings';
 import Profile from './screens/user_screens/Profile';
@@ -15,7 +17,7 @@ import Database from './screens/admin_screens/Database';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
-
+const Drawer = createDrawerNavigator();
 
 function UserTabs() {
     return (
@@ -28,7 +30,7 @@ function UserTabs() {
             <Tab.Screen name="Profile" component={Profile}
                 options={{
                     tabBarIcon: () => (
-                        <Ionicons name="profile" size={18} />
+                        <AntDesign name="customerservice" size={18} />
                     ),
                 }} />
         </Tab.Navigator>
